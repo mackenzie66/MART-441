@@ -1,0 +1,2 @@
+Copilot structure the index file and js file very similarly to mine. What I like about the AI version was that it orgainzied each of the 3 favorite things categories nicer than I did. It chose to use a gray background color and I chose a burnt orange. It too as a very simple code layout.
+I would feel a bit wierd complety using all the of the AI code. I think its great to pull idea from for example I liked how it organized the "favorites" list. However I like adding a touch of my own that way it feels more like its my work, not someone elses.
