@@ -1,0 +1,1 @@
+One of my biggest challenges was remembering all the things that were mentioned in the lesson. The videos helped alot and well as the example given. Once I looked at the example I understood the directions a lot better. By the end of the assignment I started to get the hang of it. I realized by the end the most of it was repetitive. It took a while but eventually I got there.
