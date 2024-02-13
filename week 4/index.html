@@ -1,0 +1,99 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(188, 180, 171);
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "yes")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+                document.getElementById("mainImage").src ="kelleymine.jpg"
+                myQuestion.innerHTML = "Fantastic! You are now eploring the Kelley mine. Would you like to take a left or right?";
+            }
+            else if(myChoice === "no")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "Let's get something to eat instead. Do you want to go to Lydias or Pork Chop John (PCJ)";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Try Again";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Lydias")
+            {
+                
+                myQuestion.innerHTML = "Great Choice! Lydias was established in 1946. Enjoy and nice steak with some spagetti, ravioli's, and fries!";
+            }
+            else if(answer === "PCJ")
+            
+            {
+                
+                myQuestion.innerHTML = "Delicious choice! Pork Chop John was established in 1924. Enjoy their famous Pork Chop John sandwich with mayo, mustard, onions, and pickles!";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "left")
+            {
+                
+                myQuestion.innerHTML = " You have found an underground tunnel. Enjoy exploring this fascinating city!";
+            }
+            else if(answer === "right")
+            {
+               
+                myQuestion.innerHTML = " You have exited the tunnel. We hope youve enjoyed your time and check out more of Butte's history!";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>Explore Butte!</h1>
+        
+        <br>
+        
+        <img src="butte.jpg" height="400" width="550" id="mainImage">
+    <div id="question">
+    <br>
+        You're touring Butte Montana. You thought you might want to check out the Berkely pit. 
+        <br> You spot a mine shaft near by that says enter. 
+        <br>Do you explore the mine shaft yes or no?
+    
+    </div>
+       
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter yes or no">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="30" id="choice2" value="Enter left or right" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter Lydias or PCJ"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>
