@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>OOP</title>
+    <script>
+
+
+
+
+        class SocialJustice {
+			constructor( title, image, description, author, year ) {
+				this.title = title;
+				this.image = image;
+				this.description = description;
+				this.author = author;
+				this.year = year;
+			}
+
+			
+
+			//get eColor() {
+				//return this.eyeColor;
+			//}
+			//set eColor(eyeColor) {
+				//this.eyeColor = eyeColor;
+			//}
+			get myimage() {
+				return 'this photo was taken ' + this.year;
+			}
+			//timeToTravel()
+			//{
+				//let time = this.year/this.year;
+				//return "It will take approximately " + Math.round(time) + " hours to cover " + this.year + " miles.";
+			//}
+			toString() {
+				let str;
+				str = 'This is the title ' + 
+				this.title + ' this is the image '
+				+ this.image +
+				' this is the description ' + 
+				this.description + ' the author is' + this.author + 'this is the' + this.year  ;
+				return str;
+			}
+		}
+
+        function createAndShow()
+
+        {
+			var socialjustice = [
+  		new SocialJustice ("Migrant Mother", "images/migrant.jpg", "A mother of seven living in poverty during the dust bowl era in CA.", "Dorothea Lange", 1936),
+  		new SocialJustice ("A play on Aphrodite", "images/aphrodite.jpg", "Beauty ideals in Eastern and Western Hemisphere.", "Rozeal", 2011),
+  		new SocialJustice ("Waskonedoyen", "images/indigenouswomen.jpg", "The topic of missing and murdered indigenous women as well as domestic violence.", "Monica Rickert-Bolter", 2020),
+  		new SocialJustice ("Communityii", "images/community.jpg", "A reflection on what community means and supporting those in need.", "Langston Allston", 2019),
+  		new SocialJustice ("ChicagoProtest: A Joyful Revolution", "images/protests.jpg", "Showcasing positivity and joy that can come out of a protest.", "Vashon Jordan Jr", 2020),
+		];
+			
+				var randomNumber = Math.floor(Math.random() * socialjustice.length);
+                document.getElementById("myimage").innerHTML = socialjustice[randomNumber].walk();
+				//document.getElementById("mimage").innerHTML = myimage.toString();
+
+				//var randomImage = Math.floor(Math.random() * socialjustice.length);
+				//document.getElementById("image").src = socialjustice[randomImage].walk();
+
+  				//document.getElementById("title").innerHTML = randomImage.title;
+  				//document.getElementById("description").innerHTML = randomImage.description;
+  				//document.getElementById("authorAndYear").innerHTML = `By ${randomImage.author}, ${randomImage.year}`;
+
+				//document.getElementById("myTimeToTravel").innerHTML = myPerson.timeToTravel();
+				//document.getElementById("myPerson").innerHTML = myPerson.toString();
+				
+                    
+            
+        }
+		function showRandomImage() {
+  		const randomIndex = Math.floor(Math.random() * images.length);
+  		const randomImage= socialjustice[randomIndex];
+		}
+
+		
+		
+
+    </script>
+</head>
+<body>
+	<div id="title"></div>
+	<div id="image"></div>
+	<div id="description"></div>
+	<div id="author"></div>
+	<div id="year"></div>
+	<div id="socialjustice"></div>
+
+	
+<img src="images/aphrodite.jpg">
+<img src="images/community.jpg">
+<img src="images/indigenouswomen.jpg">
+<img src="images/migrant.jpg">
+<img src="images/protests.jpg">
+
+	  
+<button onclick="createAndShow();">Click</button>
+
+    <script>
+        //createAndShow();
+        
+    </script>
+</body>
+</html>
