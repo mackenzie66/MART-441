@@ -1,0 +1,62 @@
+   #square {
+      width: 100px;
+      height: 100px;
+      background: rgb(202, 55, 22);
+      position: absolute;
+      left: 0;
+      top: 400;
+    }
+
+    #circle {
+      width: 100px;
+      height: 100px;
+      border: solid1px;
+      border-radius: 50%;
+      display:inline-block;
+      background: rgb(202, 55, 22);
+      position: absolute;
+      left: 0;
+      top: 600;
+    }
+
+
+    #triangle {
+      width: 10px;
+      height: 10px;
+      border: 180px solid
+      transparent;
+      border-top:100;
+      border-bottom: 80px solid rgb(202,55,22);
+      
+      position: absolute;
+      left: 0;
+      top: 600;
+    }
+
+    .first{
+      background: rgb(255, 162, 0);
+      color:black;
+    }
+
+    .second{
+      background: rgb(240, 173, 57);
+      color:black;
+    }
+
+
+    #third{
+      background: rgb(235, 184, 96);
+      color:black;
+    }
+
+
+    .stuff{
+      background: rgb(161, 70, 5);
+      color:white;
+    }
+
+    body{
+        background-color: rgb(219, 205, 186);
+    }
+
+   
