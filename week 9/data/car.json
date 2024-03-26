@@ -1,0 +1,14 @@
+{
+    "manufacturer" : "Chevy",
+    "model" : "equinox",
+    "owner" : {
+        "firstName" : "Terry",
+        "lastName" : "Bradshaw"
+    },
+    "Colors Available" : [
+        "red",
+        "whtie",
+        "black",
+        "navy"
+    ]
+}
