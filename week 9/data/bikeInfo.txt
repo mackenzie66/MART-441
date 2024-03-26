@@ -1,6 +1,0 @@
-<car>
-	<manufacturer>Chevy</manufacturer>
-	<model>tacoma</model>
-	<year>2022</year>
-	<price>$45000</price>
-</car>
