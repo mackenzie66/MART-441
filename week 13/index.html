@@ -21,7 +21,7 @@ var config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 300 },
+            gravity: { y:400 },
             debug: false
         }
     },
@@ -68,6 +68,9 @@ function create ()
     platforms.create(600, 400, 'ground');
     platforms.create(50, 250, 'ground');
     platforms.create(750, 220, 'ground');
+    platforms.create(680, 320, 'ground');
+    platforms.create(10, 150, 'ground');
+    platforms.create(-80, 400, 'ground');
 
     // The player and its settings
     player = this.physics.add.sprite(100, 450, 'dude');
@@ -156,9 +159,19 @@ function update ()
         player.anims.play('turn');
     }
 
+    function update() {
+    // Player movement
+
+    //if (cursors.space.isDown && player.body.touching.down)
+   //{
+     //player.setVelocityY(-400); 
+   //} 
+}
+
+
     if (cursors.up.isDown && player.body.touching.down)
-    {
-        player.setVelocityY(-330);
+   {
+      player.setVelocityY(-400);
     }
 }
 
@@ -167,7 +180,7 @@ function collectStar (player, star)
     star.disableBody(true, true);
 
     //  Add and update the score
-    score += 10;
+    score += 5;
     scoreText.setText('Score: ' + score);
 
     if (stars.countActive(true) === 0)
